@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="quarto-1.1.251" />
+<html lang="en"><head>
+<script src="computationalNotebooks_files/libs/clipboard/clipboard.min.js"></script>
+<script src="computationalNotebooks_files/libs/quarto-html/tabby.min.js"></script>
+<script src="computationalNotebooks_files/libs/quarto-html/popper.min.js"></script>
+<script src="computationalNotebooks_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="computationalNotebooks_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="computationalNotebooks_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="computationalNotebooks_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.1.251">
 
   <title>computationalnotebooks</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -313,26 +318,38 @@
     }
   </style>
 </head>
-<body>
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 
 <section>
-<section id="introduction-to-notebooks-for-research-computing" class="title-slide slide level1" data-background-image="images/Composition.jpeg," data-background-opacity=".8">
-<h1 data-background-image="images/Composition.jpeg," data-background-opacity=".8">Introduction to Notebooks for Research Computing</h1>
+<section id="introduction-to-notebooks-for-research-computing" class="title-slide slide level1 center" data-background-image="images/Composition.jpeg," data-background-opacity=".8">
+<h1>Introduction to Notebooks for Research Computing</h1>
 <p>Fall 2022 Literate Programming Workshops</p>
 </section>
-<section id="section" class="slide level2 center">
-<h2 class="center"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg></h2>
-<p>I am a health scientist and NOT a computer scientist!</p>
-<p>I am very much still learning so please ask me questions!</p>
+<section id="hello-im-heidi" class="slide level2 center">
+<h2>Hello, I’m Heidi! <svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M320 96C178.6 96 64 210.6 64 352v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V352C0 175.3 143.3 32 320 32s320 143.3 320 320v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V352C576 210.6 461.4 96 320 96zm0 192c-35.3 0-64 28.7-64 64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V352c0-70.7 57.3-128 128-128s128 57.3 128 128v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V352c0-35.3-28.7-64-64-64zM160 352v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V352c0-123.7 100.3-224 224-224s224 100.3 224 224v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V352c0-88.4-71.6-160-160-160s-160 71.6-160 160z"></path></svg></h2>
+<p><br>
+</p>
+<p><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 320c-53 0-96-43-96-96c0-42.5 27.6-78.6 65.9-91.2C96.7 126.1 96 119.1 96 112C96 50.1 146.1 0 208 0c43.1 0 80.5 24.3 99.2 60c14.7-17.1 36.5-28 60.8-28c44.2 0 80 35.8 80 80c0 5.5-.6 10.8-1.6 16c.5 0 1.1 0 1.6 0c53 0 96 43 96 96s-43 96-96 96H128zm-14.5 33.9c12.2 5.2 17.8 19.3 12.6 31.5l-48 112c-5.2 12.2-19.3 17.8-31.5 12.6s-17.8-19.3-12.6-31.5l48-112c5.2-12.2 19.3-17.8 31.5-12.6zm120 0c12.2 5.2 17.8 19.3 12.6 31.5l-48 112c-5.2 12.2-19.3 17.8-31.5 12.6s-17.8-19.3-12.6-31.5l48-112c5.2-12.2 19.3-17.8 31.5-12.6zm244.6 31.5l-48 112c-5.2 12.2-19.3 17.8-31.5 12.6s-17.8-19.3-12.6-31.5l48-112c5.2-12.2 19.3-17.8 31.5-12.6s17.8 19.3 12.6 31.5zM345.5 353.9c12.2 5.2 17.8 19.3 12.6 31.5l-48 112c-5.2 12.2-19.3 17.8-31.5 12.6s-17.8-19.3-12.6-31.5l48-112c5.2-12.2 19.3-17.8 31.5-12.6z"></path></svg>I am a health scientist and NOT a computer scientist!</p>
+<p><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M320 0c17.7 0 32 14.3 32 32V49.7C483.8 63.4 589.7 161 605.9 285.9c2 15.6-17.3 24.4-27.8 12.7C564.1 283 536.8 272 512 272c-38.7 0-71 27.5-78.4 64.1c-1.7 8.7-8.7 15.9-17.6 15.9s-15.8-7.2-17.6-15.9C391 299.5 358.7 272 320 272s-71 27.5-78.4 64.1c-1.7 8.7-8.7 15.9-17.6 15.9s-15.8-7.2-17.6-15.9C199 299.5 166.7 272 128 272c-24.8 0-52.1 11-66.1 26.7c-10.5 11.7-29.8 2.9-27.8-12.7C50.3 161 156.2 63.4 288 49.7V32c0-17.7 14.3-32 32-32zm0 304c12.3 0 23.5 4.6 32 12.2V430.6c0 45-36.5 81.4-81.4 81.4c-30.8 0-59-17.4-72.8-45l-2.3-4.7c-7.9-15.8-1.5-35 14.3-42.9s35-1.5 42.9 14.3l2.3 4.7c3 5.9 9 9.6 15.6 9.6c9.6 0 17.4-7.8 17.4-17.4V316.2c8.5-7.6 19.7-12.2 32-12.2z"></path></svg>I am very much still learning so please ask me questions!</p>
 </section>
-<section id="section-1" class="slide level2" data-background-image="images/projs.png," data-background-size="90%">
-<h2 data-background-image="images/projs.png," data-background-size="90%"></h2>
+<section id="section" class="slide level2" data-background-image="images/projs.png," data-background-size="90%">
+<h2></h2>
 <aside class="notes">
 <p>ask about notebook experiences before starting…why here?</p>
-</aside>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="why-use-a-notebook" class="slide level2">
 <h2>Why use a notebook?</h2>
@@ -341,60 +358,53 @@
 <li><p>For <strong>collaborating</strong> with other scientists (including future you!)</p></li>
 <li><p>As a <strong>lab notebook</strong> where you capture what you did and what you were thinking.</p></li>
 </ol>
-<div class="aside">
+
+<aside><div>
 <p>🔗 <a href="https://r4ds.hadley.nz/quarto.html" class="uri">https://r4ds.hadley.nz/quarto.html</a></p>
-</div>
-</section>
+</div></aside></section>
 <section id="why-use-a-notebook-1" class="slide level2">
 <h2>Why use a notebook?</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://apreshill.github.io/rmd4cdc/#18"><img data-src="https://github.com/apreshill/rmd4cdc/blob/master/images/remote-crisis.jpg?raw=true" alt="two line drawings playing telephone" /></a></p>
-</figure>
-</div>
-</section>
-<section id="how-does-it-work" class="slide level2">
+
+<img data-src="https://github.com/apreshill/rmd4cdc/blob/master/images/remote-crisis.jpg?raw=true" alt="two line drawings playing telephone" class="r-stretch quarto-figure-center"></section>
+<section id="how-does-it-work" class="slide level2" data-background-image="images/quarto-how.png," data-background-size="90%">
 <h2>How does it work?</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://r3-rmedicine.netlify.app/slides/01-basics#24"><img data-src="https://r3-rmedicine.netlify.app/slides/images/quarto-how.png" alt="illustration of hedgehog knitting a mitten for a rabbit with yarn from snake with flowchart showing anatomy and workflow of computational notebooks" width="493" /></a></p>
-</figure>
-</div>
 </section>
 <section id="change-your-mental-model" class="slide level2">
 <h2>Change your mental model</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/drakeMeme.jpeg" alt="Drake hotline bling meme saying copying/pasting is bad and code that creates your output is better" /></p>
-</figure>
-</div>
-</section>
+
+<img data-src="images/drakeMeme.jpeg" alt="Drake hotline bling meme saying copying/pasting is bad and code that creates your output is better" class="r-stretch quarto-figure-center"></section>
 <section id="change-your-mental-model-1" class="slide level2">
 <h2>Change your mental model</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/word.png" alt="Screenshot of empty microsoft word doc" width="417" /></p>
+<p><img data-src="images/word.png" alt="Screenshot of empty microsoft word doc" width="417"></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/literateNotebook.png" alt="Vector graphic disigned Compositional Book on the subjects .ipynb, .rmd, .qmd, .js" /></p>
+<p><img data-src="images/literateNotebook.png" alt="Vector graphic disigned Compositional Book on the subjects .ipynb, .rmd, .qmd, .js"></p>
 </div>
 </div>
 </section>
 <section id="demos" class="slide level2">
-<h2>Demos <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></h2>
+<h2>Demos <svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></svg></h2>
 <p>Jupyter + JupyterLab</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://twitter.com/observablehq/status/1585679939277291521"><img data-src="images/notebookToolsTable.jpeg" alt="table of notebook lingo" width="1035" /></a></p>
-</figure>
-</div>
-<aside class="notes">
+
+<img data-src="images/notebookToolsTable.jpeg" alt="table of notebook lingo" width="1035" class="r-stretch quarto-figure-center"><aside class="notes">
 <p>open terminal</p>
 <p>jupyter notebook</p>
-</aside>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="lingo" class="slide level2">
 <h2>Lingo</h2>
@@ -405,41 +415,25 @@
 <p><strong>Platform editor:</strong> where the magic happens ☁️ (sharing + UI)</p>
 </section>
 <section id="demos-1" class="slide level2">
-<h2>Demos <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></h2>
+<h2>Demos <svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></svg></h2>
 <p>Quarto + VSCode</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/notebookToolsTable.jpeg" alt="table of notebook lingo" width="1035" /></p>
-</figure>
-</div>
-</section>
+
+<img data-src="images/notebookToolsTable.jpeg" alt="table of notebook lingo" width="1035" class="r-stretch quarto-figure-center"></section>
 <section id="demos-2" class="slide level2">
-<h2>Demos <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></h2>
+<h2>Demos <svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></svg></h2>
 <p>R Markdown + RStudio</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/notebookToolsTable.jpeg" alt="table of notebook lingo" width="1035" /></p>
-</figure>
-</div>
-</section>
+
+<img data-src="images/notebookToolsTable.jpeg" alt="table of notebook lingo" width="1035" class="r-stretch quarto-figure-center"></section>
 <section id="demos-3" class="slide level2">
-<h2>Demos <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></h2>
+<h2>Demos <svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></svg></h2>
 <p>Observable + ObservableHQ</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/notebookToolsTable.jpeg" alt="table of notebook lingo" width="1035" /></p>
-</figure>
-</div>
-</section>
+
+<img data-src="images/notebookToolsTable.jpeg" alt="table of notebook lingo" width="1035" class="r-stretch quarto-figure-center"></section>
 <section id="ten-simple-rules" class="slide level2">
 <h2><a href="https://doi.org/10.1371/journal.pcbi.1007007">Ten simple rules</a> …</h2>
 <p>Writing and sharing computational analyses in Jupyter Notebooks</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/pcbi.1007007.g001.png" alt="First, we organize and document the notebook (Rules 1–3). Second, the code is developed following the rules proposed here about quality standards (Rules 4–7). Finally, the notebook is made available, along with its data (Rule 8), in a manner encouraging public exploration and contribution (Rules 9–10)" width="553" /></p>
-</figure>
-</div>
-<aside class="notes">
+
+<img data-src="images/pcbi.1007007.g001.png" alt="First, we organize and document the notebook (Rules 1–3). Second, the code is developed following the rules proposed here about quality standards (Rules 4–7). Finally, the notebook is made available, along with its data (Rule 8), in a manner encouraging public exploration and contribution (Rules 9–10)" width="553" class="r-stretch quarto-figure-center"><aside class="notes">
 <p>Simply making notebooks doesn’t make our work reproducible.</p>
 <p>Rule 1: Tell a story for an audience</p>
 <p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec003">Rule 2: Document the process, not just the results</a></p>
@@ -451,16 +445,26 @@
 <p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec009">Rule 8: Share and explain your data</a></p>
 <p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec010"><strong>Rule 9: Design your notebooks to be read, run, and explored</strong></a></p>
 <p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec011">Rule 10: Advocate for open research</a></p>
-</aside>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="thank-you" class="slide level2">
 <h2>Thank you!</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/notebooks_evaluation.png" width="408" /></p>
+<p><img data-src="images/notebooks_evaluation.png" width="408"></p>
 </figure>
 </div>
-<p><img src="assets/dsi.png" class="slide-logo" /></p>
+<p><img src="assets/dsi.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
@@ -488,7 +492,17 @@
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
-      Reveal.initialize({ 
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
         // Display controls in the bottom right corner
         controls: false,
 
@@ -657,7 +671,8 @@
         },
 
         // reveal.js plugins
-        plugins: [
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
           RevealMath,
           RevealNotes,
           RevealSearch,
@@ -707,7 +722,7 @@
       })();
     </script>
 
-    <script id = "quarto-html-after-body" type="application/javascript">
+    <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
         const mode = bsSheetEl.getAttribute("data-mode");
@@ -804,5 +819,6 @@
       }
     });
     </script>
-    </body>
-</html>
+    
+
+</body></html>

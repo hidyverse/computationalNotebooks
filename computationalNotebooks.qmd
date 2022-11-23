@@ -1,21 +1,21 @@
 ---
 format:
-  html: default
   revealjs:
     theme: [default, assets/custom.scss]
     logo: assets/dsi.png
-    output-file: index.html
 ---
 
 # Introduction to Notebooks for Research Computing {background-image="images/Composition.jpeg," background-opacity=".8"}
 
 Fall 2022 Literate Programming Workshops
 
-## `r fontawesome::fa("exclamation-triangle")` {.center}
+## Hello, I'm Heidi! `r fontawesome::fa("rainbow")` {.center}
 
-I am a health scientist and NOT a computer scientist!
+\
 
-I am very much still learning so please ask me questions!
+`r fontawesome::fa("cloud-showers-heavy")`I am a health scientist and NOT a computer scientist!
+
+`r fontawesome::fa("umbrella")`I am very much still learning so please ask me questions!
 
 ##  {background-image="images/projs.png," background-size="90%"}
 
@@ -35,13 +35,11 @@ ask about notebook experiences before starting...why here?
 🔗 <https://r4ds.hadley.nz/quarto.html>
 :::
 
-## Why use a notebook? 
+## Why use a notebook?
 
 [![](https://github.com/apreshill/rmd4cdc/blob/master/images/remote-crisis.jpg?raw=true){fig-alt="two line drawings playing telephone" fig-align="center"}](https://apreshill.github.io/rmd4cdc/#18)
 
-## How does it work? 
-
-[![](https://r3-rmedicine.netlify.app/slides/images/quarto-how.png){fig-alt="illustration of hedgehog knitting a mitten for a rabbit with yarn from snake with flowchart showing anatomy and workflow of computational notebooks" fig-align="center" width="1500"}](https://r3-rmedicine.netlify.app/slides/01-basics#24)
+## How does it work? {background-image="images/quarto-how.png," background-size="90%"}
 
 ## Change your mental model
 
@@ -131,6 +129,6 @@ Rule 1: Tell a story for an audience
 [Rule 10: Advocate for open research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec011)
 :::
 
-## Thank you! 
+## Thank you!
 
 ![](images/notebooks_evaluation.png){fig-align="center" width="408"}
