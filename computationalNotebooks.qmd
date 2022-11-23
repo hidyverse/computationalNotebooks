@@ -1,0 +1,134 @@
+---
+format:
+  revealjs:
+    theme: [default, assets/custom.scss]
+    logo: assets/dsi.png
+---
+
+# Introduction to Notebooks for Research Computing {background-image="images/Composition.jpeg," background-opacity=".8"}
+
+Fall 2022 Literate Programming Workshops
+
+## `r fontawesome::fa("exclamation-triangle")` {.center}
+
+I am a health scientist and NOT a computer scientist!
+
+I am very much still learning so please ask me questions!
+
+##  {background-image="images/projs.png," background-size="90%"}
+
+::: notes
+ask about notebook experiences before starting...why here?
+:::
+
+## Why use a notebook?
+
+1.  For **communicating** with focus on conclusions, not code.
+
+2.  For **collaborating** with other scientists (including future you!)
+
+3.  As a **lab notebook** where you capture what you did and what you were thinking.
+
+::: aside
+🔗 <https://r4ds.hadley.nz/quarto.html>
+:::
+
+## Why use a notebook? 
+
+[![](https://github.com/apreshill/rmd4cdc/blob/master/images/remote-crisis.jpg?raw=true){fig-alt="two line drawings playing telephone" fig-align="center"}](https://apreshill.github.io/rmd4cdc/#18)
+
+## How does it work? 
+
+[![](https://r3-rmedicine.netlify.app/slides/images/quarto-how.png){fig-alt="illustration of hedgehog knitting a mitten for a rabbit with yarn from snake with flowchart showing anatomy and workflow of computational notebooks" fig-align="center" width="493"}](https://r3-rmedicine.netlify.app/slides/01-basics#24)
+
+## Change your mental model
+
+![](images/drakeMeme.jpeg){fig-alt="Drake hotline bling meme saying copying/pasting is bad and code that creates your output is better" fig-align="center"}
+
+## Change your mental model
+
+::: columns
+::: {.column width="50%"}
+![](images/word.png){fig-alt="Screenshot of empty microsoft word doc" fig-align="center" width="417"}
+:::
+
+::: {.column width="50%"}
+![](images/literateNotebook.png){fig-alt="Vector graphic disigned Compositional Book on the subjects .ipynb, .rmd, .qmd, .js"}
+:::
+:::
+
+## Demos `r fontawesome::fa("play")`
+
+Jupyter + JupyterLab
+
+[![](images/notebookToolsTable.jpeg){fig-alt="table of notebook lingo" fig-align="center" width="1035"}](https://twitter.com/observablehq/status/1585679939277291521)
+
+::: notes
+open terminal
+
+jupyter notebook
+:::
+
+## Lingo
+
+**Authoring framework:** how you write `code` + text (Jupyter, Quarto, Observable)
+
+**Language engine & markdown flavor:** what you write
+
+**File format:** what you save
+
+**Local editor:** where you write locally 💻 (source + UI)
+
+**Platform editor:** where the magic happens ☁️ (sharing + UI)
+
+## Demos `r fontawesome::fa("play")`
+
+Quarto + VSCode
+
+![](images/notebookToolsTable.jpeg){fig-alt="table of notebook lingo" fig-align="center" width="1035"}
+
+## Demos `r fontawesome::fa("play")`
+
+R Markdown + RStudio
+
+![](images/notebookToolsTable.jpeg){fig-alt="table of notebook lingo" fig-align="center" width="1035"}
+
+## Demos `r fontawesome::fa("play")`
+
+Observable + ObservableHQ
+
+![](images/notebookToolsTable.jpeg){fig-alt="table of notebook lingo" fig-align="center" width="1035"}
+
+## [Ten simple rules](https://doi.org/10.1371/journal.pcbi.1007007) ...
+
+Writing and sharing computational analyses in Jupyter Notebooks
+
+![](images/pcbi.1007007.g001.png){fig-alt="First, we organize and document the notebook (Rules 1–3). Second, the code is developed following the rules proposed here about quality standards (Rules 4–7). Finally, the notebook is made available, along with its data (Rule 8), in a manner encouraging public exploration and contribution (Rules 9–10)" fig-align="center" width="553"}
+
+::: notes
+Simply making notebooks doesn't make our work reproducible.
+
+Rule 1: Tell a story for an audience
+
+[Rule 2: Document the process, not just the results](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec003)
+
+[Rule 3: Use cell divisions to make steps clear](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec004)
+
+[Rule 4: Modularize code](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec005)
+
+[Rule 5: Record dependencies](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec006)
+
+[Rule 6: Use version control](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec007)
+
+[Rule 7: Build a pipeline](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec008)
+
+[Rule 8: Share and explain your data](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec009)
+
+[**Rule 9: Design your notebooks to be read, run, and explored**](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec010)
+
+[Rule 10: Advocate for open research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007#sec011)
+:::
+
+## Thank you! 
+
+![](images/notebooks_evaluation.png){fig-align="center" width="408"}
