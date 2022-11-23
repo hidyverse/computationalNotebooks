@@ -41,7 +41,7 @@ ask about notebook experiences before starting...why here?
 
 ## How does it work? 
 
-[![](https://r3-rmedicine.netlify.app/slides/images/quarto-how.png){fig-alt="illustration of hedgehog knitting a mitten for a rabbit with yarn from snake with flowchart showing anatomy and workflow of computational notebooks" fig-align="center" width="493"}](https://r3-rmedicine.netlify.app/slides/01-basics#24)
+[![](https://r3-rmedicine.netlify.app/slides/images/quarto-how.png){fig-alt="illustration of hedgehog knitting a mitten for a rabbit with yarn from snake with flowchart showing anatomy and workflow of computational notebooks" fig-align="center" width="1500"}](https://r3-rmedicine.netlify.app/slides/01-basics#24)
 
 ## Change your mental model
 
