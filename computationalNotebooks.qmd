@@ -1,8 +1,10 @@
 ---
 format:
+  html: default
   revealjs:
     theme: [default, assets/custom.scss]
     logo: assets/dsi.png
+    output-file: index.html
 ---
 
 # Introduction to Notebooks for Research Computing {background-image="images/Composition.jpeg," background-opacity=".8"}
