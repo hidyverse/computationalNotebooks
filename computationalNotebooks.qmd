@@ -1,10 +1,8 @@
 ---
 format:
-  html: default
   revealjs:
     theme: [default, assets/custom.scss]
     logo: assets/dsi.png
-    output-file: index.html
 ---
 
 # Introduction to Notebooks for Research Computing {background-image="images/Composition.jpeg," background-opacity=".8"}
@@ -93,7 +91,7 @@ Quarto + VSCode
 
 R Markdown + RStudio
 
-![](images/notebookToolsTable.jpeg){fig-alt="table of notebook lingo" fig-align="center" width="1035"}
+![](images/quarto-rmd-meme.png){fig-alt="Distracted Boyfriend Meme of Quarto looking better than Rmd" fig-align="center" width="1035"}
 
 ## Demos `r fontawesome::fa("play")`
 
